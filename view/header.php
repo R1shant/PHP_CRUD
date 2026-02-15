@@ -14,6 +14,6 @@
     </div>
 
     <div class="navbar">
-        <a href="index.php?op">View all contacts</a>
+        <a href="index.php?act=contacts">View all contacts</a>
         <a href="index.php?act=products">View all products</a>
     </div>

@@ -5,6 +5,8 @@ require_once 'model/Output.php';
 
 class ContactsController
 {
+    private $ContactsLogic;
+    private $Output;
     public function __construct()
     {
         $this->ContactsLogic = new ContactsLogic();

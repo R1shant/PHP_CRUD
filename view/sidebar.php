@@ -1,6 +1,7 @@
+  <!-- 
 <div class="side">
     <h2>About Me</h2>
-    <!-- <?php echo $selectResult; ?> -->
+  <?php echo $selectResult; ?> 
     <h5>Photo of me:</h5>
     <div class="fakeimg" style="height:200px;">Image</div>
     <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
@@ -10,3 +11,4 @@
     <div class="fakeimg" style="height:60px;">Image</div><br>
     <div class="fakeimg" style="height:60px;">Image</div>
 </div>
+-->

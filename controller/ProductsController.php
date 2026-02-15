@@ -5,6 +5,8 @@ require_once 'model/Output.php';
 
 class ProductsController
 {
+    private $ProductsLogic;
+    private $Output;
     public function __construct()
     {
         $this->ProductsLogic = new ProductsLogic();

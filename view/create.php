@@ -2,7 +2,6 @@
 
 
 <div class="row">
-    <?php  require 'sidebar.php';?>
     <div class="main">
         <form method="post">
             <label for="name">Name: </label>

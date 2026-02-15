@@ -24,7 +24,7 @@ class Output {
                 foreach ($row as $key => $value) {
                     $html .= "<th>{$key}</th>";
                 }
-                $html .= "<th class='action-th'>Actions</th>";
+                $html .= "<th class='action-th' colspan='3'>Actions</th>";
                 $html .= "</tr>";
                 $tableheader = true;
             }

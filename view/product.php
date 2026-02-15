@@ -1,9 +1,6 @@
 <?php require 'header.php'; ?>
 
 <div class="row">
-    <?php
-    require 'sidebar.php';
-    ?>
     <div class="main">
     <ul>
         <li>id: <?= $products['product_id'] ?></li>

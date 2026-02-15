@@ -1,5 +1,6 @@
 <?php
 class DataHandler{
+	private $dbh;
 	private $host;
 	private $dbdriver;
 	private $dbname;

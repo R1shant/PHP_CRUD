@@ -4,7 +4,8 @@ require_once 'ContactsController.php';
 require_once 'ProductsController.php';
 
 class MainController {
-
+    private $ContactsController;
+    private $ProductsController;
     function __construct()
     {
         $this->ContactsController = new ContactsController();

@@ -4,9 +4,10 @@ require_once 'model/DataHandler.php';
 
 class Contactslogic
     {
+    private $DataHandler;
     public function __construct()
     {
-        $this->DataHandler = new DataHandler("localhost", "mysql", "user_db", "root", "");
+        $this->DataHandler = new DataHandler("localhost", "mysql", "user_db", "root", "RijstHand");
     }
 
     public function __destruct(){}

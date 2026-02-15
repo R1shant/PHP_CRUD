@@ -1,9 +1,6 @@
 <?php require 'header.php'; ?>
 
 <div class="row">
-    <?php
-    require 'sidebar.php';
-    ?>
     <div class="main">
         <h2>Read products</h2>
         <form method="POST" action="index.php?act=products&op=search" class="search">
