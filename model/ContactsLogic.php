@@ -70,6 +70,16 @@ class Contactslogic
             throw $e;
         }
     }
+
+    public function searchContacts($search){
+        try {
+            $sql = "SELECT * FROM contacts WHERE name LIKE '%$search%' OR phone LIKE '%$search%' OR email LIKE '%$search%' OR address LIKE '%$search%'";
+            $result = $this->DataHandler->readsData($sql);
+            return $result;
+        } catch (Exception $e) {
+            throw $e;
+        }
+    }
 }
 
 ?>

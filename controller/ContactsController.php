@@ -30,6 +30,9 @@ class ContactsController
                 case 'delete':
                     $this->collectDeleteContact($_REQUEST['id']);
                     break;
+                case 'search':
+                    $this->collectSearchContact();
+                    break;
                 default:
                     $this->collectReadAllContacts();
                     break;
@@ -68,8 +71,8 @@ class ContactsController
 
         public function collectReadContact($id) {
             $contacts = $this->ContactsLogic->readContact($id);
-            $act = "";
-            $id_colum_name = "";
+            $act = "contacts";
+            $id_colum_name = "id";
             $result = $this->Output->createTable($contacts, $act, $id_colum_name);
             include 'view/read.php';
         }
@@ -102,6 +105,21 @@ class ContactsController
             $contacts = $this->ContactsLogic->deleteContact($id);
             $msg .= "Contact Verwijderd";
             include 'view/delete.php';
+        }
+
+        public function collectSearchContact(){
+            $search = isset($_REQUEST['search']) ? $_REQUEST['search'] : '';
+            $contacts = $this->ContactsLogic->searchContacts($search);
+            $act = "contacts";
+            $id_colum_name = "id";
+            $result = $this->Output->createTable($contacts, $act, $id_colum_name);
+
+            if (isset($_REQUEST['ajax']) && $_REQUEST['ajax'] == '1') {
+                echo $result;
+                return;
+            }
+
+            include 'view/searchContacts.php';
         }
     }
 

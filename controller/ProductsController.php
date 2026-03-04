@@ -120,13 +120,17 @@ class ProductsController
 
     public function collectSearchProduct()
     {
-        if (isset($_REQUEST['submit'])) {
-            $search = $_POST['search'];
-        }
+        $search = isset($_REQUEST['search']) ? $_REQUEST['search'] : '';
         $products = $this->ProductsLogic->searchProducts($search);
         $id_colum_name = "product_id";
         $act = "products";
         $result = $this->Output->createTable($products, $act, $id_colum_name);
+
+        if (isset($_REQUEST['ajax']) && $_REQUEST['ajax'] == '1') {
+            echo $result;
+            return;
+        }
+
         include 'view/searchProducts.php';
     }
 

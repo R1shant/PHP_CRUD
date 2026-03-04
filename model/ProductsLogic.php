@@ -77,7 +77,7 @@ class ProductsLogic
 
     public function searchProducts($search) {
         try{
-            $sql = "SELECT * FROM Products WHERE product_name LIKE '%$search% ' OR other_product_details LIKE '%$search%'";
+            $sql = "SELECT * FROM Products WHERE product_name LIKE '%$search%' OR other_product_details LIKE '%$search%'";
             $result = $this->DataHandler->readsData($sql);
             return $result;
         } catch (Exception $e) {
