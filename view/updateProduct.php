@@ -2,7 +2,8 @@
 
 <div class="row">
     <div class="main">
-        <form method="post" action="<?= $operation;?>">
+        <h2>Update product</h2>
+        <form method="post" action="<?= $operation;?>" class="crud-form">
 
             <label for="product_type_code">Product type code: </label>
             <input type="text" id="product_type_code" name="product_type_code" value="<?= $type; ?>" required><br>

@@ -14,7 +14,7 @@ class Output {
 
     public function createTable($result, $act, $id_colum_name = "id",) {
         $tableheader = false;
-        $html = "<div style='overflow-x: auto'>";
+        $html = "<div class='table-wrap'>";
         // $html .= "<div class='btn'><a href=?act=" . $act . "&op=create>Create new</a></div>";
         $html .= "<table>";
 

@@ -2,7 +2,10 @@
 
 <div class="row">
     <div class="main">
-        <?= $result; ?>
+        <h2>Read contact</h2>
+        <div class="table-wrap">
+            <?= $result; ?>
+        </div>
     </div>
 </div>
 

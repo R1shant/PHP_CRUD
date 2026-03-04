@@ -2,7 +2,8 @@
 
 <div class="row">
     <div class="main">
-        <form method="post">
+        <h2>Create product</h2>
+        <form method="post" class="crud-form">
 
             <label for="product_type_code">Product type code: </label>
             <input type="text" id="product_type_code" name="product_type_code" required><br>

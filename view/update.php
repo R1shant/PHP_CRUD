@@ -2,7 +2,8 @@
 
 <div class="row">
     <div class="main">
-        <form method="post">
+        <h2>Update contact</h2>
+        <form method="post" class="crud-form">
 
             <label for="name">Name: </label>
             <input type="text" id="name" name="name" value="<?= $name; ?>"><br>

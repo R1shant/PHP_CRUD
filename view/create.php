@@ -3,7 +3,8 @@
 
 <div class="row">
     <div class="main">
-        <form method="post">
+        <h2>Create contact</h2>
+        <form method="post" class="crud-form">
             <label for="name">Name: </label>
             <input type="text" id="name" name="name" required><br>
 
